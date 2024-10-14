@@ -1,4 +1,3 @@
-# Basic-programming
 # Basic C++ Programming Assignments  
 
 **Instructor:** Amir Jahanshahi  

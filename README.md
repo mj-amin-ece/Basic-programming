@@ -1,64 +1,36 @@
-# Basic C++ Programming Assignments  
+# Basic Programming in C++
 
-**Instructor:** Amir Jahanshahi  
-**University:** Amir Kabir University of Technology  
-**Date:** Spring 2016  
+**My solutions to the four assignments of an introductory C++ course: control flow, number theory, string processing, operator overloading, a tokenizing complex-number calculator, Fourier and Taylor series, recursion, and a polynomial class.**
 
-This repository contains a collection of assignments from the **Basic Programming in C++** course. The assignments cover fundamental programming concepts and problem-solving skills. All the questions are provided in Farsi, and the solutions demonstrate key C++ programming techniques.
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?logo=cplusplus&logoColor=white)
 
-## Table of Contents
-- [Assignment 1](#assignment-1)
-- [Assignment 2](#assignment-2)
-- [Assignment 3](#assignment-3)
-- [Assignment 4](#assignment-4)
+Course: *Basic Programming* (Dr. Amir Jahanshahi), Amirkabir University of Technology.
+The problem sets are in Persian (Farsi). The code and reports show the C++ solutions.
 
----
+## Assignments
 
-### Assignment 1
-- **Topic:** Variable manipulation and conditional logic
-- **Description:**  
-  This assignment includes:
-  - Basic exercises on variable declarations, arithmetic operations, and control structures.
-  - Calculating the area of a triangle and determining the orientation (clockwise or counterclockwise) of its vertices.
-  - Programs to check for prime numbers and perform specific digit manipulations on numbers.
-  
-  
+| # | Folder | Topics |
+|---|---|---|
+| 1 | [`01-basics-and-control-flow`](01-basics-and-control-flow) | Arithmetic and control structures, triangle area and vertex orientation (clockwise or counter-clockwise), primality tests, digit manipulation. |
+| 2 | [`02-primes-and-strings`](02-primes-and-strings) | Primes and "super primes", e-mail format validation, palindromes, random numbers with a frequency histogram. |
+| 3 | [`03-complex-calculator-fourier`](03-complex-calculator-fourier) | An interactive complex-number calculator with a token stream and variables (Q1); a Fourier-series approximation of a periodic signal compared with its true values (Q2). |
+| 4 | [`04-recursion-and-polynomials`](04-recursion-and-polynomials) | Recursive combinations, GCD, logarithm and Taylor-series sine (Q1); a `Polynomial` class with addition, subtraction, differentiation and integration (Q2). |
 
----
+Each folder contains `problem-set.pdf` (the assignment), `report.pdf` (my write-up), and one sub-folder per question (`Q1/`, `Q2/`, …).
 
-### Assignment 2
-- **Topic:** Prime numbers and string manipulation
-- **Description:**  
-  This assignment focuses on:
-  - Checking if a number is prime and finding "super prime" numbers.
-  - Verifying email format correctness.
-  - Checking if a word is a palindrome.
-  - Generating random numbers and displaying a histogram of their frequencies.
-  
- 
+## Building
 
----
+Each question is a stand-alone program:
 
-### Assignment 3
-- **Topic:** Complex number calculator and Fourier series approximation
-- **Description:**  
-  In this assignment, you will:
-  - Implement a calculator for performing operations on complex numbers.
-  - Approximate a periodic function using Fourier series and compare real vs. approximated values.
-  
-  
+```bash
+cd 03-complex-calculator-fourier/Q1
+g++ -std=c++17 *.cpp -o calculator && ./calculator
+```
 
----
+## Reference
 
-### Assignment 4
-- **Topic:** Recursive functions and polynomial operations
-- **Description:**  
-  The final assignment covers:
-  - Recursive solutions for combinations, GCD, logarithms, and sine calculation using Taylor series.
-  - Creating a polynomial class to perform operations like addition, subtraction, differentiation, and integration.
-  
+B. Stroustrup, *Programming: Principles and Practice Using C++*, 2nd ed., Addison-Wesley, 2014. This is the course textbook. The token-stream calculator in assignment 3 follows its design.
 
+## Author
 
----
-
-Feel free to explore and use these solutions to enhance your understanding of basic C++ programming concepts!
+**Mohammad Javad Amin** · [GitHub](https://github.com/mj-amin-ece)

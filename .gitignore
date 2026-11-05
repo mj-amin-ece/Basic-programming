@@ -1,0 +1,10 @@
+# Build outputs
+*.o
+*.exe
+a.out
+
+# IDE / OS
+.vs/
+Debug/
+Release/
+.DS_Store
